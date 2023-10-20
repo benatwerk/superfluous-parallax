@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+}
+
+#parallaxContainer {
+    position: relative;
+    height: 1920px;
+    width: 1311px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#parallaxText {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: white;
+    z-index: 6;
+}
+
+.letter {
+    position: relative;
+}
+
+.letter:first-child {
+    transform: translateY(-50px);
+}
+
+
+.parallax {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#background {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/background.png");
+}
+
+#building {
+    z-index: 3;
+    height: 1920px;
+    width: 1920px;
+    bottom: -100px;
+    left: 100px;
+    background-image: url("images/building.png");
+}
+
+#monster {
+    z-index: 2;
+    height: 1920px;
+    width: 1920px;
+    top: 300px;
+    left: 0;
+    background-image: url("images/monster.png");
+}
+
+#falling {
+    z-index: 4;
+    height: 30px;
+    width: 30px;
+    top: 388px;
+    left: 621px;
+    background-size: cover;
+    background-image: url("images/man2.png");
+}
+
+.bubble {
+    z-index: 5;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+}
+
+#bubble1 {
+    top: 465px;
+    left: 408px;
+}
+
+#bubble2 {
+    top: 535px;
+    left: 687px;
+}
+
+#bubble3 {
+    top: 683px;
+    left: 825px;
+}
+
+#bubble4 {
+    top: 765px;
+    left: 594px;
+}
+
+#bubble5 {
+    position: absolute;
+    left: 23px;
+    bottom: 87%;
+    transform: translate(-100%, 0);
+    width: 100px;
+    height: 100px;
+}
